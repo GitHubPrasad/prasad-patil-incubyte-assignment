@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cucumber-js",
+    "test:debug": "cucumber-js --publish",
+    "test:playwright": "playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GitHubPrasad/prasad-patil-incubyte-assignment.git"
@@ -17,7 +21,10 @@
   },
   "homepage": "https://github.com/GitHubPrasad/prasad-patil-incubyte-assignment#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
+    "xlsx": "^0.18.5"
   }
 }
